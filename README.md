@@ -4,7 +4,7 @@ Git testing with:
 
 Tanna\
 Margaret\
-Zhi Yan\
+Zhi Yan
 
 # GitHub Page
 https://thattanna.github.io/
