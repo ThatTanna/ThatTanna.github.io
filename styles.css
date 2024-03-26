@@ -25,11 +25,14 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px 70px 70px;
+    width: 80%;
+    margin: auto;
     /*top , right, bottom, left*/
 }
 
 /* set the logo styles */
-.logo, .sectiontitle {
+.logo,
+.sectiontitle {
     font-size: 45px;
     font-weight: 700;
     color: lightseagreen;
@@ -120,6 +123,8 @@ nav ul li:hover a {
 }
 
 /* set the <a> tags' styles */
+button[type="submit"],
+button[type="reset"],
 .linkcontainer a {
     padding: 10px 20px;
     font-size: 16px;
@@ -130,6 +135,23 @@ nav ul li:hover a {
     margin-right: 5px;
     cursor: pointer;
     text-decoration: none;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 400px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-size: small;
+    color: lightseagreen;
+    border: 1px solid lightseagreen;
+    border-radius: 10px;
+    ;
 }
 
 
@@ -233,19 +255,49 @@ nav ul li:hover a {
 /* ***************************** */
 /* End of styling projectsection */
 
+/* Start of styling contactsection */
+/* ******************************* */
+
+#contactsection {
+    width: 80%;
+    margin: auto;
+    height: 100dvh;
+}
+
+.contactcontainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(31, 179, 171, 0.3);
+}
+
+/* ***************************** */
+/* End of styling contactsection */
+
 /* Start of styling miscellaneous elements */
 /* *************************************** */
 
-.top{
+.top {
     display: flex;
     justify-content: center;
 }
 
-.top a{
+.top a {
     margin: 20px;
     text-decoration: none;
     color: lightseagreen;
     font-size: small;
+}
+
+.divider {
+    margin: auto;
+    width: 80%;
+    height: 5em;
+    border-top: 1px dashed rgb(31, 178, 170);
 }
 
 /* ************************************* */
