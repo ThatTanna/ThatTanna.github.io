@@ -29,7 +29,7 @@ body {
 }
 
 /* set the logo styles */
-.logo {
+.logo, .sectiontitle {
     font-size: 45px;
     font-weight: 700;
     color: lightseagreen;
@@ -56,12 +56,13 @@ nav ul li:hover a {
 }
 
 /* set the main cointainer as a grid of columns */
-.container {
+#mainsection {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
     margin: auto;
     width: 80%;
+    height: 100dvh;
 }
 
 /* set the left div column */
@@ -147,3 +148,105 @@ nav ul li:hover a {
     line-height: 30px;
     padding-bottom: 20px;
 }
+
+/* Start of styling projectsection */
+/* ******************************* */
+
+#projectsection {
+    width: 80%;
+    margin: auto;
+    height: 100dvh;
+}
+
+/* Set the showcasecontainer to list the projects */
+/* repeated in equal column of 3s per fractional unit */
+.showcasecontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* Set the card styles */
+.projectcard {
+    font-size: small;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 24px;
+}
+
+/* Set the projectsection grid container's content with */
+
+.projectcard h4,
+.projectcard p {
+    padding-left: 16px;
+}
+
+/* Set the image in the project card */
+.projectcard img {
+    display: block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("img/imgplaceholder.png");
+    text-indent: -9999px;
+}
+
+/* Set the projectcard title's style
+    (set the text to be uppercase) */
+.projectcard .scope {
+    text-transform: uppercase;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Set mouseover effect for project card */
+.projectcard:hover {
+    transition: 0.3s ease-out;
+    transform: scale(1.03);
+}
+
+/* Style the links in the project card */
+.projectcard a {
+    text-decoration: none;
+    color: gray;
+    transform: scale(1.0);
+}
+
+/* Set the styles for the tags in project card */
+.projectcard span {
+    font-size: x-small;
+    display: inline;
+    align-content: space-between;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: lightseagreen;
+    padding: 5px 10px;
+    display: inline-block;
+    color: white;
+
+}
+
+/* ***************************** */
+/* End of styling projectsection */
+
+/* Start of styling miscellaneous elements */
+/* *************************************** */
+
+.top{
+    display: flex;
+    justify-content: center;
+}
+
+.top a{
+    margin: 20px;
+    text-decoration: none;
+    color: lightseagreen;
+    font-size: small;
+}
+
+/* ************************************* */
+/* End of styling miscellaneous elements */
